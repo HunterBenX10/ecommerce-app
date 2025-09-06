@@ -94,6 +94,14 @@ const Product = () => {
           </div>
         </div>
       </div>
+
+      {/* Product Description and Reviews */}
+
+      <div className="mt-20">
+        <div className="flex">
+          <b className="border px-5 py-3 text-sm"> Description</b>
+        </div>
+      </div>
     </div>
   ) : (
     <div className="opacity-50">Loading...</div>
