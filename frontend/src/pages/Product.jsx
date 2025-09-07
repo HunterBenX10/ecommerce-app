@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { ShopContext } from "../context/ShopContext";
 import { useParams } from "react-router-dom";
 import { assets } from "../assets/assets";
+import RelatedProducts from "../components/RelatedProducts";
 
 const Product = () => {
   const { productId } = useParams();
@@ -98,10 +99,39 @@ const Product = () => {
       {/* Product Description and Reviews */}
 
       <div className="mt-20">
-        <div className="flex">
-          <b className="border px-5 py-3 text-sm"> Description</b>
+        <div className="flex border-b">
+          <button className="px-5 py-3 text-sm font-bold border-b-2 border-black bg-white">
+            Description
+          </button>
+          <button className="px-5 py-3 text-sm font-bold border-b-2 border-black/30 bg-white">
+            Reviews (122)
+          </button>
+        </div>
+
+        <div className="flex flex-col gap-4 border rounded-lg shadow-md px-6 py-6 text-sm text-gray-500 bg-white mt-2">
+          <p>
+            An e-commerce website is an online platform where buyers and sellers
+            can interact and conduct transactions for goods and services. It
+            provides a virtual storefront for businesses to showcase their
+            products, and it offers various features to enhance the shopping
+            experience, such as product catalogs, shopping carts, and secure
+            payment gateways.
+          </p>
+          <p>
+            Ecommerce websites typically feature a user-friendly interface,
+            allowing customers to easily browse and search for products. They
+            may also include customer reviews and ratings, helping shoppers make
+            informed decisions.
+          </p>
         </div>
       </div>
+
+      {/* Related Products */}
+
+      <RelatedProducts
+        category={productData.category}
+        subCategory={productData.subCategory}
+      />
     </div>
   ) : (
     <div className="opacity-50">Loading...</div>
