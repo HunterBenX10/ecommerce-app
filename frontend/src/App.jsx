@@ -12,7 +12,8 @@ import PlaceOrder from "./pages/PlaceOrder";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SearchBar from "./components/SearchBar";
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer } from "react-toastify";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
