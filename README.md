@@ -1,5 +1,7 @@
 E-Commerce App – Frontend
 
+This App is hosted on **Vercel** : https://ecommerce-app-l3m8.vercel.app/
+
 Welcome to the frontend of the E-Commerce App! This project delivers a responsive and user-friendly shopping experience, built with React and modern web technologies.
 
 🚀 Project Overview
